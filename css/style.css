@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'Ten Mincho';
+  font-weight: 400;
+  src: url('../font/Ten\ Mincho\ Text\ Regular.otf');
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+
+a:hover,
+button:hover {
+  opacity: 0.8;
+}
+
+body {
+  color: #5c5b5b;
+  font-family: 'Ten Mincho', sans-serif;
+  background-color: #ececec;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.inner {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.cmn-ttl {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.cmn-txt {
+  line-height: 1.2;
+}
+
+/* Coding */
+.main-ttl {
+  text-align: center;
+  font-size: 32px;
+  padding: 20px 0;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.menu-list .item {
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-list .item:not(:nth-child(4)) {
+  margin-right: 2%;
+}
+
+.menu-list .item img {
+  width: 150px;
+}
+
+.menu-list .item .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  opacity: 0;
+}
+
+.menu-list .item .content .txt,
+.menu-list .item .content .puls {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+.menu-list .item .content .puls {
+  top: 60%;
+}
+
+.cmn-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cmn-content .about-content {
+  display: none;
+}

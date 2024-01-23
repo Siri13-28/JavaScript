@@ -1,0 +1,147 @@
+@charset "uft-8";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+a {
+  display: inline-block;
+  color: #3f3f3f;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.main-ttl {
+  font-size: 70px;
+}
+
+.main-txt {
+  font-size: 24px;
+}
+
+.parallax-item {
+  justify-content: space-between;
+  height: 300px;
+}
+
+.parallax-item:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+.content {
+  width: 50%;
+  line-height: 1.2;
+}
+
+.content .ttl {
+  padding: 30px 0;
+  font-size: 26px;
+}
+
+.parallax-img {
+  position: relative;
+  width: 40%;
+  background-color: #f1b994;
+}
+
+.over-parallax {
+  position: absolute;
+  width: 70%;
+  transition: top 0.2s ease;
+}
+
+.parallax-item:nth-of-type(odd) .over-parallax {
+  left: -35px;
+}
+
+.parallax-item:nth-of-type(even) .over-parallax {
+  right: -35px;
+}
+
+.height {
+  height: 50vh;
+}
+
+/* footer */
+.footer {
+  background-color: #3f3f3f;
+  color: #fff;
+  padding: 30px 0;
+  font-size: 12px;
+}
+
+.footer-content {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 20px 0;
+}
+
+.copy-right {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.info {
+  text-align: right;
+  line-height: 2;
+}
+
+.info span {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+  body {
+    font-size: 1.406vw;
+  }
+  
+  .main-ttl {
+    font-size: 5.469vw;
+  }
+  
+  .main-txt {
+    font-size: 1.875vw;
+  }
+  
+  .parallax-item {
+    height: 23.438vw;
+  }
+
+  .content .ttl {
+    padding: 2.344vw 0;
+    font-size: 2.031vw;
+  }
+
+  .parallax-item:nth-of-type(odd) .over-parallax {
+    left: -2.734vw;
+  }
+  
+  .parallax-item:nth-of-type(even) .over-parallax {
+    right: -2.734vw;
+  }
+  
+  /* footer */
+  .footer {
+    padding: 2.344vw 0;
+    font-size: 0.938vw;
+  }
+  
+  .footer-content {
+    border-top: 0.078vw solid #fff;
+    border-bottom: 0.078vw solid #fff;
+    padding: 1.563vw 0;
+  }
+  
+  .copy-right {
+    padding-bottom: 2.344vw;
+  }
+}
